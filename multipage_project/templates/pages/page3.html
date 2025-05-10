@@ -1,0 +1,99 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+    <style>
+        .ai-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ai-content h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .ai-content h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .ai-content p {
+            margin-bottom: 15px;
+        }
+        .ai-content .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .ai-content footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+
+    <div class="ai-content">
+        <h1>The Importance of Cybersecurity in the Digital Age</h1>
+
+        <div class="highlight">
+            <p>In today's interconnected world, cybersecurity has become a critical concern for individuals, businesses, and governments alike.</p>
+        </div>
+
+        <h2>The Growing Threat Landscape</h2>
+        <p>With the rapid expansion of digital technologies, cyber threats such as hacking, data breaches, ransomware, and identity theft have increased in both frequency and sophistication. </p>
+        <p>Cybersecurity refers to the practices and technologies designed to protect networks, devices, and sensitive information from malicious attacks.</p>
+
+        <h2>Evolving Cyber Threats</h2>
+        <p>One of the biggest challenges in cybersecurity is the evolving nature of cyber threats.</p>
+        <p>Attackers constantly develop new techniques to exploit vulnerabilities:</p>
+        <ul>
+            <li><strong>Phishing scams</strong> trick users into revealing passwords</li>
+            <li><strong>Malware attacks</strong> can cripple entire networks</li>
+            <li><strong>Ransomware</strong> holds data hostage for financial gain</li>
+            <li><strong>Zero-day exploits</strong> target unknown vulnerabilities</li>
+        </ul>
+        <p>Businesses face significant financial and reputational damage from cyberattacks, with data breaches costing millions in recovery and legal penalties.</p>
+
+        <h2>Critical Infrastructure at Risk</h2>
+        <p>Governments face cyber espionage and threats to essential systems:</p>
+        <ul>
+            <li>Power grids and utilities</li>
+            <li>Healthcare systems</li>
+            <li>Financial networks</li>
+            <li>National defense systems</li>
+        </ul>
+
+        <h2>Proactive Defense Strategies</h2>
+        <p>To combat these risks, organizations must adopt comprehensive security measures:</p>
+        <ul>
+            <li><strong>Strong encryption</strong> for data protection</li>
+            <li><strong>Multi-factor authentication</strong> for access control</li>
+            <li><strong>Regular software updates</strong> to patch vulnerabilities</li>
+            <li><strong>Employee training</strong> to reduce human error</li>
+            <li><strong>AI-powered monitoring</strong> for real-time threat detection</li>
+        </ul>
+
+        <h2>A Shared Responsibility</h2>
+        <p>Cybersecurity requires collective action:</p>
+        <ul>
+            <li>Individuals must practice safe online habits</li>
+            <li>Businesses must invest in robust security infrastructure</li>
+            <li>Governments must establish effective policies and frameworks</li>
+        </ul>
+        <p>As cyber threats continue to evolve, staying vigilant and adaptive is key to protecting our digital future.</p>
+
+        <footer>
+            <p>&copy; 2023 Cybersecurity Awareness. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <p>Go to <a href="{% url 'page4' %}">Page 4</a></p>
+{% endblock %}

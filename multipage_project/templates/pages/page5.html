@@ -1,0 +1,131 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+    <style>
+        .ai-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ai-content h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .ai-content h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .ai-content h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        .ai-content p {
+            margin-bottom: 15px;
+        }
+        .ai-content .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .ai-content footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+
+    <div class="ai-content">
+        <h1>Software Engineering: Development Methodologies, Design Patterns, and Testing/QA</h1>
+
+        <div class="highlight">
+            <p>Software engineering is a structured approach to developing high-quality software through systematic methodologies, design principles, and rigorous testing.</p>
+        </div>
+
+        <h2>Development Methodologies</h2>
+        <p>Modern software development relies on iterative and collaborative methodologies to deliver value quickly and efficiently:</p>
+
+        <h3>Agile Methodology</h3>
+        <ul>
+            <li>Emphasizes flexibility and customer feedback</li>
+            <li>Delivers working software in incremental sprints</li>
+            <li>Uses frameworks like Scrum and Kanban</li>
+            <li>Adapts to changing requirements throughout development</li>
+        </ul>
+
+        <h3>DevOps Practices</h3>
+        <ul>
+            <li>Bridges development and operations teams</li>
+            <li>Implements CI/CD pipelines for continuous delivery</li>
+            <li>Automates testing and deployment processes</li>
+            <li>Enables faster releases with fewer errors</li>
+        </ul>
+
+        <h2>Software Design Patterns</h2>
+        <p>Proven solutions to common software design challenges that promote maintainability and scalability:</p>
+
+        <h3>Creational Patterns</h3>
+        <ul>
+            <li><strong>Singleton</strong>: Ensures a class has only one instance</li>
+            <li><strong>Factory</strong>: Creates objects without specifying exact class</li>
+            <li><strong>Builder</strong>: Constructs complex objects step by step</li>
+        </ul>
+
+        <h3>Structural Patterns</h3>
+        <ul>
+            <li><strong>Adapter</strong>: Allows incompatible interfaces to work together</li>
+            <li><strong>Decorator</strong>: Adds responsibilities to objects dynamically</li>
+            <li><strong>Facade</strong>: Provides simplified interface to complex system</li>
+        </ul>
+
+        <h3>Behavioral Patterns</h3>
+        <ul>
+            <li><strong>Observer</strong>: Notifies objects of state changes</li>
+            <li><strong>Strategy</strong>: Enables selecting algorithms at runtime</li>
+            <li><strong>Command</strong>: Encapsulates requests as objects</li>
+        </ul>
+
+        <h2>Testing and Quality Assurance</h2>
+        <p>Comprehensive approaches to ensure software reliability and performance:</p>
+
+        <h3>Testing Types</h3>
+        <ul>
+            <li><strong>Unit Testing</strong>: Verifies individual components</li>
+            <li><strong>Integration Testing</strong>: Checks module interactions</li>
+            <li><strong>System Testing</strong>: Validates complete system</li>
+            <li><strong>Acceptance Testing</strong>: Confirms user requirements</li>
+        </ul>
+
+        <h3>QA Methodologies</h3>
+        <ul>
+            <li><strong>TDD (Test-Driven Development)</strong>: Write tests before code</li>
+            <li><strong>BDD (Behavior-Driven Development)</strong>: Tests based on user stories</li>
+            <li><strong>Automated Testing</strong>: Tools like Selenium and JUnit</li>
+            <li><strong>Manual Testing</strong>: Human verification of edge cases</li>
+        </ul>
+
+        <h2>Modern Software Engineering</h2>
+        <p>The combination of these practices enables teams to:</p>
+        <ul>
+            <li>Respond quickly to changing market needs</li>
+            <li>Build maintainable, scalable architectures</li>
+            <li>Deliver reliable, high-quality software</li>
+            <li>Reduce technical debt and bugs in production</li>
+        </ul>
+
+        <footer>
+            <p>&copy; 2023 Software Engineering Practices. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <p>Back to <a href="{% url 'page1' %}">Page 1</a></p>
+{% endblock %}

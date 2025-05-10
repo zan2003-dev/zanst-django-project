@@ -1,0 +1,93 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+    <style>
+        .ai-content {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ai-content h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .ai-content h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .ai-content p {
+            margin-bottom: 15px;
+        }
+        .ai-content .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .ai-content footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+
+    <div class="ai-content">
+        <h1>Data Structures & Algorithms: The Foundation of Efficient Computing</h1>
+
+        <div class="highlight">
+            <p>Data Structures and Algorithms (DSA) form the backbone of computer science, enabling efficient data organization, storage, and retrieval.</p>
+        </div>
+
+        <h2>Importance of Data Structures</h2>
+        <p>Data structures determine how data is accessed and manipulated. Common structures include:</p>
+        <ul>
+            <li><strong>Arrays</strong>: Contiguous memory storage for fast access.</li>
+            <li><strong>Linked Lists</strong>: Dynamic memory allocation with efficient insertions/deletions.</li>
+            <li><strong>Stacks & Queues</strong>: LIFO and FIFO structures for managing data sequences.</li>
+            <li><strong>Trees (Binary, AVL, B-Trees)</strong>: Hierarchical structures for quick searches.</li>
+            <li><strong>Graphs</strong>: Networks representing relationships (e.g., social networks).</li>
+            <li><strong>Hash Tables</strong>: Key-value pairs for constant-time lookups.</li>
+        </ul>
+        <p>Choosing the right structure impacts speed and memory usage. </p>
+        <p>For example, hash tables excel in search operations, while arrays allow O(1) random access.</p>
+
+        <h2>Role of Algorithms</h2>
+        <p>Algorithms define the logic for processing data. Key algorithm types include:</p>
+        <ul>
+            <li><strong>Sorting (QuickSort, MergeSort)</strong>: Organizing data for efficient retrieval.</li>
+            <li><strong>Searching (Binary Search)</strong>: Quickly locating elements in sorted data.</li>
+            <li><strong>Graph Algorithms (BFS, DFS, Dijkstra's)</strong>: Solving pathfinding and connectivity problems.</li>
+            <li><strong>Dynamic Programming</strong>: Breaking complex problems into simpler subproblems.</li>
+        </ul>
+        <p>Efficiency is measured using <strong>Big-O notation</strong>, which describes worst-case time and space complexity. </p>
+        <p>For instance, MergeSort runs in O(n log n), whereas BubbleSort takes O(n²).</p>
+
+        <h2>Real-World Applications</h2>
+        <p>DSA is crucial in:</p>
+        <ul>
+            <li><strong>Databases</strong>: Indexing (B-Trees) speeds up queries.</li>
+            <li><strong>AI/ML</strong>: Efficient data handling improves model training.</li>
+            <li><strong>Networking</strong>: Routing algorithms optimize data transmission.</li>
+            <li><strong>Blockchain</strong>: Cryptographic hashing ensures security.</li>
+        </ul>
+
+        <h2>Mastering DSA</h2>
+        <p>Mastering DSA enhances problem-solving skills, making it essential for software engineers, competitive programmers, and system designers. </p>
+        <p>By understanding these concepts, developers can write optimized, scalable code—key to building high-performance applications.</p>
+
+        <footer>
+            <p>&copy; 2023 Computer Science Fundamentals. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <p>Go to <a href="{% url 'page3' %}">Page 3</a></p>
+{% endblock %}
